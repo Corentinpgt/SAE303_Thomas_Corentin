@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE 3.03 Graphs</title>
+    <script src="module/anychart-base.min.js" type="text/javascript"></script>
+    <script src="module/anychart-sunburst.min.js" type="text/javascript"></script>
+    <script src="module/anychart-graph.min.js" type="text/javascript"></script>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <main>
+        <div class="card iteration_1">
+            <div class="container" id="container" style="width: 1480px; height: 500px;"></div>
+        </div>
+        <div class="card iteration_2">
+            <label for="selectAll">Choisir un graphe :</label>
+            <div class="it2_selects">
+                <select name="selectAll" id="selectAll">
+                    <option value="selectSem">Semestres</option>
+                    <option value="selectSae">Sae</option>
+                    <option value="selectRes">Ressources</option>
+                </select>
+                <div id="select">
+                    <select name="selectSem" id="selectSem"></select>
+                    <select name="selectSae" id="selectSae"></select>
+                    <select name="selectRes" id="selectRes"></select>
+                </div>
+            </div>
+            <div class="container" id="containerIt2" style="width: 700px; height: 400px;"></div>
+        </div>
+        <div class="card iteration_3">
+            <label for="selectIt3">Choisir un graphe :</label>
+            <select name="selectIt3" id="selectIt3"></select>
+            <div class="container" id="containerIt3" style="width: 700px; height: 400px;"></div>
+        </div>
+        <div class="card iteration_4">
+            <div class="container" id="containerIt4" style="width: 1480px; height: 1000px;"></div>
+        </div>
+ 
+    </main>
+</body>
+</html>
